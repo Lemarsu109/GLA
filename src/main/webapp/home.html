@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .upbar {
+            width: auto;
+            background-color: #00BFFF;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .button1 {
+            float: right;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+
+        .formbloc {
+            margin-right: 30%;
+            margin-left: 30%;
+            margin-top: 100px;
+            background-color: #87CEFA;
+            border-radius: 30px;
+            text-align: center;
+            padding: 20px 20px 20px 20px;
+        }
+    </style>
+
+    <div class="upbar">
+        Flightshare
+        <a href="sign_in.html"><button class="button button1">Sign in</button></a>
+        <a href="log_in.html"><button class="button button1">Log in</button></a>
+    </div>
+
+    <div class="formbloc">
+        <form action="/search_results.html" method="get">
+            <label for="depairport">Departure airport:</label>
+            <input type="text" id="depairport" name="depairport"><br />
+            <label for="depdate">Departure date:</label>
+            <input type="date" id="depdate" name="depdate"><br><br>
+            <input type="submit" id="button" value="Search">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="home.js"></script>
+
+</body>
+</html>
